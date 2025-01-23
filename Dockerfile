@@ -39,7 +39,7 @@ RUN mkdir /var/run/kvrocks /var/lib/kvrocks && \
 # Switch to the non-root user
 USER kvrocks
 
-VOLUME /var/lib/kvrocks
+# VOLUME /var/lib/kvrocks
 
 COPY --from=build /kvrocks/build/kvrocks /bin/
 
